@@ -1,4 +1,4 @@
-# Real-Time Product Recommendation API
+# Real-Time Product Recommendation System
 
 This is a solo-built, FastAPI-based product recommendation system that uses collaborative filtering to suggest relevant products to users. The system includes a simulated event ingestion pipeline to mimic real-time updates using a Python script.
 
