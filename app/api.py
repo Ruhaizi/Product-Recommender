@@ -1,10 +1,12 @@
 from fastapi import FastAPI, HTTPException, Query
 from model import Recommender
+import os 
 
 app = FastAPI()
 
 # Initialize recommender
-recommender = Recommender(data_path="data/user_events.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "data", "user_events.csv")
+recommender = Recommender(data_path=csv_path)
 recommender.load_data()
 
 @app.get("/")
